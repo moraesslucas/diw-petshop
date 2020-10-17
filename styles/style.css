@@ -2,19 +2,85 @@ body {
     margin: 0px;
 }
 
+@font-face {
+    font-family: "Free Hand";
+    src: url(../fonts/Freeh521.ttf) format("truetype");
+}
+
 .header-banner {
     width: 100%;
     height: 600px;
 }
 
-.banner {
+.banner1 {
     background-image: url("../img/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
 }
 
-.banner,
+.banner2 {
+    background-image: url("../img/dog2.jpg");
+}
+
+.banner3 {
+    background-image: url("../img/dog1.webp");
+}
+
+.banner4 {
+    background-image: url("../img/cat.jpg");
+}
+
+.fadable {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -200px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+
+@keyframes fadeInAndOut {
+    0% {
+        opacity:1;
+    }
+    17% {
+        opacity:1;
+    }
+    25% {
+        opacity:0;
+    }
+    92% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.header-banner .fadable {
+    animation-name: fadeInAndOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+  
+.header-banner .fadable:nth-of-type(1) {
+    animation-delay: 9s;
+}
+.header-banner .fadable:nth-of-type(2) {
+    animation-delay: 6s;
+}
+.header-banner .fadable:nth-of-type(3) {
+    animation-delay: 3s;
+}
+.header-banner .fadable:nth-of-type(4) {
+    animation-delay: 0;
+}
+
+.banner1,
+.banner2,
+.banner3,
+.banner4,
 .logo {
     height: 600px;
     width: 100%;
@@ -41,12 +107,21 @@ body {
 .header-menu {
     padding: 10px 16px;
     height: 70px;
-    background: #555;
+    background: #93C0ED;
     color: #f1f1f1;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     left: 0;
     right: 0;
     width: 100%;
+}
+
+.header-menu .titulo{
+    font-family: "Free Hand", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+.titulo-menu .destaque-amarelo{
+    color: #FBCA44;
 }
 
 .menu-list {
@@ -64,10 +139,12 @@ body {
 }
 
 .item-menu {
+    margin-top: 0px;
     float: right;
-    padding-right: 20px;
-    margin-top: 25px;
+    padding: 20px;
     font-size: 24px;
+    background-color: #6ba8e5;
+    display: block;
 }
 
 .item-menu > a {
@@ -76,14 +153,15 @@ body {
 }
 
 .item-menu > a:hover {
-    color: #000;
+    color: #FBCA44;
     text-decoration: none;
 }
 
 .titulo-menu {
     float: left;
-    font-size: 32px;
+    font-size: 24px;
     margin-top: 15px;
+    -webkit-text-stroke: 0.3px #666;
 }
 
 .servicos,
