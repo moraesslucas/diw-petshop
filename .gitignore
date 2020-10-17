@@ -1,0 +1,5 @@
+# Webstorm cache
+.idea/
+
+# Mac File System Folder
+.DS_Store/
