@@ -105,14 +105,31 @@ body {
 }
 
 .header-menu {
+    position: relative;
     padding: 10px 16px;
     height: 70px;
-    background: #93C0ED;
+    background-image: url("../img/pattern.jpg");
+    background-repeat: repeat-x;
+    background-size: contain;
     color: #f1f1f1;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     left: 0;
     right: 0;
-    width: 100%;
+    width: 97.8%;
+}
+
+.footer-menu {
+    height: 300px;
+    background-color: #29333a;
+}
+
+.overlay {
+    position: absolute;
+    width: 97.8%;
+    height: 80%;
+    background: rgba(0,0,0,0.5);
+    margin: -10px -16px;
+    padding: 10px 16px;
 }
 
 .header-menu .titulo{
@@ -140,11 +157,13 @@ body {
 
 .item-menu {
     margin-top: 0px;
+    margin-bottom: 0px;
     float: right;
     padding: 20px;
     font-size: 24px;
-    background-color: #6ba8e5;
+    background-color: #3FB8A6;
     display: block;
+    margin-right: 2px;
 }
 
 .item-menu > a {
@@ -160,13 +179,85 @@ body {
 .titulo-menu {
     float: left;
     font-size: 24px;
+    margin-bottom: 0px;
     margin-top: 15px;
     -webkit-text-stroke: 0.3px #666;
 }
 
-.servicos,
 .clientes,
 .produtos,
 .lojas {
-    height: 400px;
+    height: 700px;
+}
+
+.produtos {
+    height: 750px;
+}
+
+.servicos,
+.produtos {
+    background-color: #3FB8A6;
+}
+
+.servicos {
+    height: 450px;
+}
+
+.clientes,
+.lojas {
+    background-color: #465864;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 100%;
+}
+
+.column {
+    flex: 1;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 100%;
+    margin: 0 auto;
+    height: 300px;
+}
+
+.card-wrapper > .card,
+.card-wrapper > .card-unique {
+    flex: 1;
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px #333;
+}
+
+.card-unique {
+    height: 500px;
+}
+
+.conheca {
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.conheca > h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    margin: 0 0;
+}
+
+.anchor {
+    display: block;
+    height: 90px;
+    margin-top: -90px;
+    visibility: hidden;
 }
