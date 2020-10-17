@@ -2,13 +2,40 @@ body {
     margin: 0px;
 }
 
-.banner {
+.header-banner {
     width: 100%;
-    height: 400px;
+    height: 600px;
+}
+
+.banner {
     background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+}
+
+.banner,
+.logo {
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo > .image {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    border-radius: 55%;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px #333;
+    margin-top: 200px;
 }
 
 .header-menu {
