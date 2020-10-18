@@ -240,6 +240,7 @@ a {
 
 .card-wrapper > .card,
 .card-wrapper > .card-unique {
+    position: relative;
     flex: 1;
     margin: 10px;
     background-color: #fff;
@@ -314,7 +315,9 @@ i.icon {
     margin: 0 auto;
     padding-top: 15px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 80px;
+    position: absolute;
+    bottom: 10px;
+    right: 160px;
 }
 
 .lojas > h3 {

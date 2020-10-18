@@ -3,6 +3,10 @@
     Galleria.run('.galleria');
 }());
 
+$('.seleciona-servico').click( function() {
+    $('#servico').val($(this).data('valor'));
+});
+
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -23,4 +27,4 @@ var mySwiper = new Swiper('.swiper-container', {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
-})
+});

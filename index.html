@@ -42,15 +42,26 @@
         <div class="card-wrapper">
             <div class="card">
                 <h3>Banho</h3>
-                <p>Explicação do serviço aqui</p>
+                <hr>
+                <p>Banho em cão porte P: R$ 30,00</p>
+                <p>Banho em cão porte M: R$ 40,00</p>
+                <p>Banho em cão porte G: R$ 50,00</p>
+                <a href="#agendamento" class="button seleciona-servico" rel="modal:open" data-valor="banho">Agende seu horário</a>
             </div>
             <div class="card">
                 <h3>Tosa</h3>
-                <p>Explicação do serviço aqui</p>
+                <hr>
+                <p>Tosa em cão porte P: R$ 20,00</p>
+                <p>Tosa em cão porte M: R$ 30,00</p>
+                <p>Tosa em cão porte G: R$ 40,00</p>
+                <a href="#agendamento" class="button seleciona-servico" rel="modal:open" data-valor="tosa">Agende seu horário</a>
             </div>
             <div class="card">
                 <h3>Adestramento</h3>
-                <p>Explicação do serviço aqui</p>
+                <hr>
+                <p>Aulas para adestramento com adestrador local: R$ 60,00</p>
+                <p>Consultoria online (30 dias) para adestramento: R$ 80,00</p>
+                <a href="#agendamento" class="button seleciona-servico" rel="modal:open" data-valor="adestramento">Agende seu horário</a>
             </div>
         </div>
     </div>
@@ -289,6 +300,35 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
+    </div>
+
+    <div id="agendamento" class="modal">
+        <h2>Agendamento de horário</h2>
+        <hr>
+        <!-- Slider main container -->
+        <form action=”mailto:petmeupetshopcontato@gmail.com” method=”POST” enctype=”multipart/form-data” name="agendamento">
+            <label for="nomepet"> Nome do PET: </label>
+            <input type=”text” size=”40″ name="nomepet" id="nomepet">
+            <br/>
+            <label for="nometutor"> Nome do Tutor: </label>
+            <input type=”text” size=”40″ name="nometutor" id="nometutor">
+            <br/>
+            <label for="servico"> Serviço: </label>
+            <select name="servico" id="servico">
+                <option value="banho">Banho</option> 
+                <option value="tosa">Tosa</option>
+                <option value="adestramento">Adestramento</option>
+              </select>
+            <br/>
+            <label for="horario"> Horário: </label>
+            <select name="horario" id="horario">
+                <option value="manha">09:00 - 12:00</option> 
+                <option value="tarde1">13:00 - 15:00</option>
+                <option value="tarde2">15:00 - 18:00</option>
+              </select>
+              <br/>
+              <input type="submit" value="Agendar"> 
+        </form>
     </div>
 </body>
 <footer>
