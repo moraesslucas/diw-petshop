@@ -123,6 +123,13 @@ body {
     background-color: #29333a;
 }
 
+.galleria { 
+    width: 100%; 
+    height: 550px; 
+    background: #465864;
+    margin: 0 auto;
+}
+
 .overlay {
     position: absolute;
     width: 97.8%;
