@@ -174,7 +174,7 @@ body {
     margin-right: 2px;
 }
 
-.item-menu > a {
+a {
     color: #f1f1f1;
     text-decoration: none;
 }
@@ -225,6 +225,7 @@ body {
 
 .column {
     flex: 1;
+    padding: 20px;
 }
 
 .card-wrapper {
@@ -257,10 +258,15 @@ body {
     padding-top: 30px;
 }
 
+.column > h3,
 .conheca > h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fff;
     margin: 0 0;
+}
+
+.column {
+    text-align: left;
 }
 
 .anchor {
@@ -273,4 +279,20 @@ body {
 .map {
     margin: 0 auto;
     display: block;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #fff;
+}
+
+li {
+    padding-top: 10px;
+}
+
+i.icon {
+    padding-right: 10px;
+    font-size: 36px;
 }
