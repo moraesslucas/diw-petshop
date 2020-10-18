@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 @font-face {
@@ -295,4 +296,29 @@ li {
 i.icon {
     padding-right: 10px;
     font-size: 36px;
+}
+
+.carrossel {
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.button {
+    display: block;
+    background-color: #465864;
+    color: #fff;
+    border-radius: 2%;
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    padding-top: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 80px;
+}
+
+.lojas > h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    text-align: center;
 }

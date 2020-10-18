@@ -8,6 +8,11 @@
     <link href="styles/style.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/fa/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body>
     <div class="header-banner">
@@ -23,7 +28,7 @@
         <div class="overlay">
             <h2 class="titulo-menu"><span class="titulo"><span class="destaque-amarelo">Pet</span> Meu</span> - O <span class="destaque-amarelo">MELHOR</span> da Zona Norte</h2>
             <div class="menu-list">
-                <h3 class="item-menu"><a href="#lojas">Sobre nós</a></h3>
+                <h3 class="item-menu"><a href="#lojas">Localização</a></h3>
                 <h3 class="item-menu"><a href="#produtos">Produtos</a></h3>
                 <h3 class="item-menu"><a href="#clientes">Clientes</a></h3>
                 <h3 class="item-menu"><a href="#servicos">Serviços</a></h3>
@@ -70,30 +75,42 @@
         <div class="conheca"><h2>Descubra nossa gama de produtos</h2></div>
         <div class="card-wrapper">
             <div class="card">
-                <h3>Coleiras</h3>
-                <p>Carrossel de imagens</p>
+                <h3>Coleiras e guias</h3>
+                <hr>
+                <p>Para o maior conforto do seu pet, disponibilizamos diversas coleiras e guias para aquisição em nossa loja.</p>
+                <a href="#coleiras" class="button" rel="modal:open">Veja fotos</a>
             </div>
             <div class="card">
-                <h3>Rações</h3>
-                <p>Carrossel de imagens</p>
+                <h3>Alimentos</h3>
+                <hr>
+                <p>Buscando uma boa nutrição e o melhor para seu pet, temos disponíveis rações, petiscos e diversos itens alimentícios.</p>
+                <a href="#alimentos" class="button" rel="modal:open">Veja fotos</a>
             </div>
             <div class="card">
                 <h3>Brinquedos</h3>
-                <p>Carrossel de imagens</p>
+                <hr>
+                <p>Para a alegria do seu pet, temos a venda vários brinquedos e produtos para brincadeiras em geral.</p>
+                <a href="#brinquedos" class="button" rel="modal:open">Veja fotos</a>
             </div>
         </div>
         <div class="card-wrapper">
             <div class="card">
                 <h3>Medicamentos</h3>
-                <p>Carrossel de imagens</p>
+                <hr>
+                <p>Seu pet está se sentindo mal? O veterinário recomendou algum medicamento? Temos diversos itens à venda em nossa loja.</p>
+                <a href="#medicamentos" class="button" rel="modal:open">Veja fotos</a>
             </div>
             <div class="card">
                 <h3>Itens de higiene</h3>
-                <p>Carrossel de imagens</p>
+                <hr>
+                <p>Querendo deixar seu amigo cheiroso e bem limpinho? Disponibilizamos vários produtos para te auxiliar nisso.</p>
+                <a href="#higiene" class="button" rel="modal:open">Veja fotos</a>
             </div>
             <div class="card">
                 <h3>Caminhas</h3>
-                <p>Carrossel de imagens</p>
+                <hr>
+                <p>Querendo dar mais conforto pro soninho do seu amigo? Temos diversos modelos de cama para venda!</p>
+                <a href="#caminhas" class="button" rel="modal:open">Veja fotos</a>
             </div>
         </div>
     </div>
@@ -101,6 +118,7 @@
     <span class="anchor" id="lojas"></span>
     <div class="lojas">
         <div class="conheca"><h2>Visite nossa loja</h2></div>
+        <h3>Av. Manoel Elias, 2130 - Passo das Pedras, Porto Alegre - RS, 91240-260</h3>
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.090284470576!2d-51.12357648472992!3d-30.034267581885956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197624740badfd%3A0x764bb3f057088a8d!2sPet%20Meu!5e0!3m2!1spt-BR!2sbr!4v1602983551186!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 
@@ -137,6 +155,139 @@
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+
+    <div id="coleiras" class="modal">
+        <h2>Coleiras</h2>
+        <hr>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img class="carrossel" src="img/coleiras/coleira1.jpg"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/coleiras/coleira2.webp"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/coleiras/coleira3.jpg"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/coleiras/coleira4.webp"/></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div id="alimentos" class="modal">
+        <h2>Alimentos</h2>
+        <hr>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img class="carrossel" src="img/alimentos/alimento1.jpg"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/alimentos/alimento2.jpg"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/alimentos/alimento3.webp"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/alimentos/alimento4.jpeg"/></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div id="brinquedos" class="modal">
+        <h2>Brinquedos</h2>
+        <hr>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img class="carrossel" src="img/brinquedos/brinquedo1.jpg"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/brinquedos/brinquedo2.jpg"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/brinquedos/brinquedo3.webp"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/brinquedos/brinquedo4.jpg"/></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div id="medicamentos" class="modal">
+        <h2>Medicamentos</h2>
+        <hr>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img class="carrossel" src="img/medicamentos/medicamento1.png"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/medicamentos/medicamento2.jpg"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/medicamentos/medicamento3.webp"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/medicamentos/medicamento4.png"/></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div id="higiene" class="modal">
+        <h2>Itens de Higiene</h2>
+        <hr>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img class="carrossel" src="img/higiene/higiene1.jpg"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/higiene/higiene2.jpg"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/higiene/higiene3.jpg"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/higiene/higiene4.jpg"/></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div id="caminhas" class="modal">
+        <h2>Caminhas</h2>
+        <hr>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img class="carrossel" src="img/caminhas/cama1.jpg"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/caminhas/cama2.jpg"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/caminhas/cama3.webp"/></div>
+                <div class="swiper-slide"><img class="carrossel" src="img/caminhas/cama4.jpg"/></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </div>
 </body>
